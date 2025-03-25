@@ -1,29 +1,64 @@
+/* Dark theme with reddish accents */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color:#880E4F;
+    background-color: #1A1A1A; /* Dark background */
+    color: #E0E0E0; /* Light gray text */
 }
 
 header {
-    background: #333;
+    background: #880E4F; /* Reddish color */
     color: white;
     padding: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 section {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
-    background: white;
-    border-radius: 5px;
+    background: #2C2C2C; /* Darker section background */
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.3); /* Reddish glow */
 }
 
 footer {
-    background: #333;
+    background: #880E4F; /* Same as header */
     color: white;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Links */
+a {
+    color: #FF1744; /* Bright red links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FF5252; /* Lighter red on hover */
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background: #880E4F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #FF1744; /* Brighter red on hover */
 }
