@@ -1,64 +1,97 @@
-/* Dark theme with reddish accents */
+/* 🌙 Dark theme with a modern look */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #1A1A1A; /* Dark background */
+    background-color: #121212; /* Dark background */
     color: #E0E0E0; /* Light gray text */
 }
 
+/* 🔥 Header with a gradient */
 header {
-    background: #880E4F; /* Reddish color */
+    background: linear-gradient(to right, #880E4F, #D81B60); /* Reddish gradient */
     color: white;
     padding: 20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3);
 }
 
+/* 📌 Section Styling */
 section {
-    margin: 20px auto;
-    padding: 20px;
-    background: #2C2C2C; /* Darker section background */
-    border-radius: 8px;
-    width: 80%;
-    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.3); /* Reddish glow */
+    margin: 30px auto;
+    padding: 25px;
+    background: #1E1E1E; /* Dark gray */
+    border-radius: 10px;
+    width: 85%;
+    max-width: 800px;
+    box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.2); /* Soft red glow */
+    transition: transform 0.3s ease;
 }
 
+section:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* 🎯 Footer */
 footer {
     background: #880E4F; /* Same as header */
     color: white;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9rem;
 }
 
-/* Links */
+/* 🔗 Links */
 a {
-    color: #FF1744; /* Bright red links */
+    color: #FF5252; /* Bright red links */
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 a:hover {
-    color: #FF5252; /* Lighter red on hover */
+    color: #FF1744; /* Lighter red on hover */
     text-decoration: underline;
 }
 
-/* Buttons */
+/* 🎛️ Buttons */
 button {
-    background: #880E4F;
+    background: #D81B60;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.3);
 }
 
 button:hover {
     background: #FF1744; /* Brighter red on hover */
+    transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    header {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
