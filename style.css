@@ -22,7 +22,7 @@ section {
     padding: 20px;
     background: #2C2C2C; /* Darker section background */
     border-radius: 8px;
-    width: 100%;
+    width: 80%;
     box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.3); /* Reddish glow */
 }
 
